@@ -3,6 +3,16 @@
 #include<iostream>
 using namespace std;
 
+//optional , recommended to use std:: swap function for th epurpose of swapinhg of values .
+void swap(int &a, int &b){  // we have to pass values of the array as the reference variable other wise it send the copy of the variable.
+    int temp;
+    temp = a;
+    a = b;
+    b = temp;
+
+    return;
+}
+
 void inputInArray(int arr[], int n){
     cout<<"Enter elements of the array:";
     for (int i = 0; i < n; i++)
