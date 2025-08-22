@@ -27,7 +27,7 @@
 class Solution {
 public:
     int singleNonDuplicate(vector<int>& a) {
-        int st = 0 ; int end = a.size();
+        int st = 0 ; int end = a.size()-1;
         //edge case 
         if(a.size()==1)
             return a[0];
@@ -66,4 +66,5 @@ public:
         }
         return -1;
     }
+
 };
